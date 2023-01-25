@@ -20,6 +20,7 @@ public class DataBaseService {
 
 		String w= examples.toString();
 		try {
+			System.out.println();
 			DriverManager.registerDriver(new org.postgresql.Driver());
 			Class.forName("org.postgresql.Driver");
 			Connection connection= DriverManager.getConnection(url,dbUser,dbpassword);
